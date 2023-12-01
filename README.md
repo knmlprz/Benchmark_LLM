@@ -1,4 +1,4 @@
-📚 research_LLM Project Read Me 📚
+📚 research_LLM 📚
 
 Project Objective 🎯
 The aim of the "research_LLM" project is to conduct tests and assessments of various Language Models (LLMs - Large Language Models) to understand their performance and applications.
@@ -19,6 +19,3 @@ Project Stages 📊
 
 - Documentation Creation 📄
         Documentation containing results, insights, and recommendations.
-
-Contact 📧
-For any questions or suggestions, please reach out to the project team.

@@ -1,13 +1,12 @@
 services:
-  DB:
+  db:
     build: .
     volumes:
       - ./DB/benchmark.db:/app/DB/benchmark.db
     ports:
       - "5000:5000"
 
-    
-  benchmark:
+
 
 
 

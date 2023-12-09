@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "chatlib"
+name = "benchmarks"
 version = "0.1.0"
 description = ""
 authors = ["Piotr Krawiec <piotr.krawiec23@gmail.com>"]

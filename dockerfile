@@ -1,17 +1,20 @@
 FROM python:3.11-buster
 
-RUN apt-get update && apt-get install -y sqlite3 libsqlite3-dev
+# Instalacja SQLite i Poetry
+RUN apt-get update && apt-get install -y sqlite3 libsqlite3-dev && \
+    pip install poetry==1.6.1
 
-RUN pip install poetry==1.6.1
+# Wyłączenie wirtualnego środowiska w poetry
+RUN poetry config virtualenvs.create false
 
 WORKDIR /app
 
-COPY ./benchmarks /app/benchmarks
-COPY ./DB /app
-COPY ./chatlib /app
+# Kopiowanie plików konfiguracyjnych Poetry i instalacja zależności
+COPY ./pyproject.toml ./poetry.lock* /app/
+RUN poetry install --no-dev
 
-# Install project dependencies using poetry (without specifying the pyproject.toml file)
-RUN poetry install
+# Kopiowanie reszty plików projektu
+COPY ./benchmarks /app/benchmarks
+COPY ./DB /app/DB
 
 ENTRYPOINT ["python", "./bot.py"]
-

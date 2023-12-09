@@ -6,21 +6,17 @@ services:
     ports:
       - "5000:5000"
 
-
-
-
-
-  embedding-api:
-    image: michaelf34/infinity:latest
-    command: "--model-name-or-path /models/e5-large-v2 --port 80"
-    volumes:
-      - ./models:/models
-    ports:
-      - 5001:80
-    deploy:
-      resources:
-        reservations:
-          devices:
-            - driver: nvidia
-              count: 1
-              capabilities: [gpu]
+  # embedding-api:
+  #   image: michaelf34/infinity:latest
+  #   command: "--model-name-or-path /models/e5-large-v2 --port 80"
+  #   volumes:
+  #     - ./models:/models
+  #   ports:
+  #     - "5001:80"  # lub "5001:5001" jeśli API nasłuchuje na porcie 5001
+  #   deploy:
+  #     resources:
+  #       reservations:
+  #         devices:
+  #           - driver: nvidia
+  #             count: 1
+  #             capabilities: [gpu]

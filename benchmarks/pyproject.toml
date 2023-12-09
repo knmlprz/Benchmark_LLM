@@ -4,7 +4,7 @@ version = "0.1.0"
 description = ""
 authors = ["Piotr Krawiec <piotr.krawiec23@gmail.com>"]
 readme = "README.md"
-packages = [{include = "chatlib"}]
+packages = [{include = "benchmarks"}]
 
 [tool.poetry.dependencies]
 python = "^3.10"

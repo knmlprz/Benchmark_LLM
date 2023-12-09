@@ -1,20 +1,17 @@
-FROM python:3.11-buster
+FROM python:3.11
 
-# Instalacja SQLite i Poetry
-RUN apt-get update && apt-get install -y sqlite3 libsqlite3-dev && \
-    pip install poetry==1.6.1
 
-# Wyłączenie wirtualnego środowiska w poetry
-RUN poetry config virtualenvs.create false
+WORKDIR /usr/src/app
 
-WORKDIR /app
 
-# Kopiowanie plików konfiguracyjnych Poetry i instalacja zależności
-COPY ./pyproject.toml ./poetry.lock* /app/
-RUN poetry install --no-dev
+COPY pyproject.toml ./
 
-# Kopiowanie reszty plików projektu
-COPY ./benchmarks /app/benchmarks
-COPY ./DB /app/DB
+# Install poetry for package management
+RUN pip install --no-cache-dir poetry
+RUN poetry install
 
-ENTRYPOINT ["python", "./bot.py"]
+
+COPY . .
+
+
+ENTRYPOINT ["python", "benchmark/main.py"]

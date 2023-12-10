@@ -33,5 +33,3 @@ then
 else
     echo "Virtual environment already exists."
 fi
-
-

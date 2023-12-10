@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 # Polish LLM benchmark
+=======
+# Polish benchmark LLM
+>>>>>>> 466a40031a73a16c8a419573fa9461786ad3043c
 
 Polish benchmark LLM is a compact yet powerful platform designed for benchmarking  in polish langue open-source large language models (LLMs)  Equipped with diverse test datasets, it facilitates rigorous and comprehensive evaluation of LLMs. This tool streamlines the process of assessing model performance, enabling researchers and developers to reliably test and share their findings in the dynamic landscape of AI and natural language processing.
 # Table of Contents

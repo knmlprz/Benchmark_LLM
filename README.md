@@ -1,4 +1,5 @@
-# Polish benchmark LLM
+# Polish LLM benchmark
+
 Polish benchmark LLM is a compact yet powerful platform designed for benchmarking  in polish langue open-source large language models (LLMs)  Equipped with diverse test datasets, it facilitates rigorous and comprehensive evaluation of LLMs. This tool streamlines the process of assessing model performance, enabling researchers and developers to reliably test and share their findings in the dynamic landscape of AI and natural language processing.
 # Table of Contents
 
@@ -9,8 +10,7 @@ Polish benchmark LLM is a compact yet powerful platform designed for benchmarkin
 ### [Run Benchamrk](#run-benchmark)
 - [For Liunx](#for-linux)
 - [For Windows](#for-Windows)
-
-### [Below That good first issue](#below-that-good-first-issue)
+### [Below That ](#below-that-good-first-issue)
 - [Prerequisites](#prerequisites)
 - [Installing](#installing)
 - [Running the Tests](#running-the-tests)
@@ -19,7 +19,7 @@ Polish benchmark LLM is a compact yet powerful platform designed for benchmarkin
 - [Contributing](#contributing)
 - [Versioning](#versioning)
 - [Authors](#authors)
-- [License](#license)
+- [License](#license
 - [Acknowledgments](#acknowledgments)
 
 # Getting Started
@@ -42,7 +42,7 @@ Run the setup script to configure the environment.
    ```bash
    git clone https://github.com/knmlprz/Benchmark_LLM.git
    cd Benchmark_LLM
-   ./trust_me_bro.sh
+   ./set_venv.sh
    source venv/bin/activate 
    ``` 
 
@@ -56,7 +56,7 @@ Run the setup script to configure the environment
    ```bash
 git clone https://github.com/knmlprz/Benchmark_LLM.git
 cd Benchmark_LLM
-trust_me_bro.bat
+set_venv.bat
 venv\Scripts\activate.bat
    ``` 
 
@@ -68,21 +68,21 @@ venv\Scripts\activate.bat
 
 Build and start the Docker containers. This step is required only once or after any changes in the Docker configuration.
 ```bash 
-sudo docker-compose up --build
+docker compose up --build
 ```
 
 **Regular Usage**
 
 Start the Docker containers without rebuilding.
 ```bash 
-sudo docker-compose up
+docker compose up
 ``` 
 
 **Shutdown**
 
 To stop and remove the containers, networks, and volumes, use:
 ```bash 
-sudo docker-compose down
+docker compose down
 ``` 
 
 ### For Windows
@@ -91,26 +91,26 @@ sudo docker-compose down
 
 Build and start the Docker containers. This step is required only once or after any changes in the Docker configuration.
 ```bash 
-docker-compose up --build
+docker compose up --build
 ```
 **Regular Usage**
 
 Start the Docker containers without rebuilding.
 ```bash 
-docker-compose up
+docker compose up
 ``` 
 
 **Shutdown**
 
 To stop and remove the containers, networks, and volumes, use:
 ```bash 
-docker-compose down
+docker compose down
 ``` 
 
 
 # Below That Good First Issue
 
-## Deployment
+<!-- ## Deployment
 
 Add additional notes about how to deploy this on a live system.
 
@@ -142,6 +142,6 @@ This project is licensed under the MIT License - see the [LICENSE.md](link to LI
 
 * Hat tip to anyone whose code was used
 * Inspiration
-* etc
+* etc -->
 
 

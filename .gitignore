@@ -27,16 +27,10 @@ ENV/
 *.swo
 *~
 
-# System files
-# Ignores system-specific files like .DS_Store (macOS) and Thumbs.db (Windows).
-.DS_Store
-Thumbs.db
 
 # Docker
 # Ignores Docker-related files and directories to prevent accidental inclusion or modification.
-docker-compose*.yml
-Dockerfile
-*.dockerignore
+
 *.env
 .env.*
 !example.env
@@ -44,10 +38,6 @@ Dockerfile
 # Databases
 # Ignores database files and directories, typically for SQLite.
 database/
-*.db
-*.sql
-*.sqlite
-*.sqlite3
 
 # Logs and data files
 # Ignores log files and various data file formats.

@@ -37,7 +37,7 @@ ENV/
 
 # Databases
 # Ignores database files and directories, typically for SQLite.
-database/
+*.db
 
 # Logs and data files
 # Ignores log files and various data file formats.
